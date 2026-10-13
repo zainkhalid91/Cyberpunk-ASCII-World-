@@ -1,0 +1,3 @@
+CC0 recordings from OpenGameArt.org, converted to raw 32 kHz signed 16-bit little-endian PCM:
+- rain_bed.pcm: 'Rain (Ambient, Not Loopable)' by Ove Melaa, Long Version (one 40 s cycle, levelled)
+- thunder.pcm: 'Rain + Long Thunder' (rain-thunder.ogg), thunder roll from 0:20.7
