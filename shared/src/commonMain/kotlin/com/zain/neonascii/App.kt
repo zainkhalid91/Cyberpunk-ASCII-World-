@@ -369,16 +369,13 @@ private fun Hud(state: NeonState, mono: FontFamily, monoBold: FontFamily, cellW:
             )
         }
         if (!isTouchPlatform) {
-            if (state.t < 10.5f) state.frame // follow the frame clock only while the hint fades
-            val hintAlpha = ((10f - state.t) / 2f).coerceIn(0f, 1f)
-            if (hintAlpha > 0f) {
-                BasicText(
-                    "A/D move · SPACE jump ×2 · J saber (×3 combo, deflects) · K blaster · SHIFT dash · stomp enemies · wheel zoom · T lightning · P autopilot",
-
-                    style = small.copy(color = small.color.copy(alpha = hintAlpha * 0.85f)),
-                    modifier = Modifier.align(Alignment.BottomCenter),
-                )
-            }
+            // The controls stay on screen (H hides the whole HUD for clean recordings).
+            BasicText(
+                "A/D move · SPACE jump ×2 · S drop · J saber (×3 combo, deflects) · K blaster · SHIFT dash · stomp enemies\n" +
+                    "wheel/+/- zoom · 0 reset · 1/2/3 view · C cells · T lightning · P autopilot · M mute · H hide HUD",
+                style = small.copy(color = small.color.copy(alpha = 0.85f), textAlign = androidx.compose.ui.text.style.TextAlign.Center),
+                modifier = Modifier.align(Alignment.BottomCenter),
+            )
         }
     }
 }
