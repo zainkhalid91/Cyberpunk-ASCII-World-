@@ -3,6 +3,19 @@
 A playable rainy cyberpunk side-scroller rendered as live ASCII art: Compose Multiplatform for
 Windows and Android (13+).
 
+![ASCII mode](docs/screenshots/01-ascii.png)
+
+## Screenshots
+
+| | |
+|---|---|
+| **SPLIT**: ASCII on the left, the raw scene on the right (key `2`, drag to move the divider) ![Split](docs/screenshots/02-split.png) | **RAW**: the scene before the ASCII pass (key `3`) ![Raw](docs/screenshots/03-raw.png) |
+| **CELLS M**: medium glyph cells (key `C`) ![Cells M](docs/screenshots/04-cells-m.png) | **CELLS L**: chunky glyph cells ![Cells L](docs/screenshots/05-cells-l.png) |
+| **Sky-train and crowd** in ASCII ![Sky-train](docs/screenshots/06-sky-train.png) | **The same moment in RAW** ![Sky-train raw](docs/screenshots/07-sky-train-raw.png) |
+| **Arena fight**: AMBUSH, barriers, combo counter ![Arena fight](docs/screenshots/08-arena-fight.png) | **Zoomed into a fight** ![Fight zoom](docs/screenshots/09-fight-zoom.png) |
+| **Zoomed in**: material glyphs, `\| / -` edges, `- ~` water ![Zoom glyphs](docs/screenshots/10-zoom-glyphs.png) | **Street level**: weeds, ripples, water dashes ![Zoom street](docs/screenshots/11-zoom-street.png) |
+| **Street level in RAW**: weeds bending, a kickable can, puddle rings ![Zoom street raw](docs/screenshots/12-zoom-street-raw.png) | |
+
 ## How it works
 
 1. `city/CityRenderer.kt` draws the city with Compose `Canvas`: a parallax skyline, neon signs,

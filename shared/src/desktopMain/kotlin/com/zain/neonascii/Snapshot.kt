@@ -83,6 +83,13 @@ private fun shoot(out: File, name: String, w: Int, h: Int, density: Float) {
     run(2)
     save("raw")
     state.mode = ViewMode.Ascii
+    state.cellPreset = 1
+    run(2)
+    save("cells-m")
+    state.cellPreset = 2
+    run(2)
+    save("cells-l")
+    state.cellPreset = 0
     run(300)
     save("run2")
     // Play on into the fights and keep a few frames from them.
