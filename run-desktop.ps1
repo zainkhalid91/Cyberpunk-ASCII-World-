@@ -3,4 +3,5 @@
 New-Item -ItemType Directory -Force D:\tmp | Out-Null
 $env:TEMP = 'D:\tmp'; $env:TMP = 'D:\tmp'
 $env:GRADLE_OPTS = '-Djdk.net.unixdomain.tmpdir=D:\tmp'
+Set-Location $PSScriptRoot # gradlew builds the project in the current directory
 & "$PSScriptRoot\gradlew.bat" :shared:run
